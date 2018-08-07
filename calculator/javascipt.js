@@ -53,3 +53,18 @@ function Advanced_calculator(){
     alert(Math.sqrt(number_1));
   }
 }
+
+function BMI_calculator(){
+  var op = prompt("Enter 1 for Metric(kg and cm) and 2 for Imperial (lb and inch)");
+
+  if (op == 1){
+    var weight =parseFloat(prompt("Enter your weight(kg)"));
+    var height =parseFloat(prompt("Enter your height (m)"));
+    alert(weight / (height * height));
+  }
+
+  if (op == 2)
+  var weight =parseFloat(prompt("Enter your weight(lb)"));
+  var height =parseFloat(prompt("Enter your height (inch)"));
+  alert((weight / (height * height)) * 703);
+}
